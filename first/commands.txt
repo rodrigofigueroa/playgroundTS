@@ -1,0 +1,7 @@
+install tsc
+
+npm i --g typescript
+
+
+
+tsc init
