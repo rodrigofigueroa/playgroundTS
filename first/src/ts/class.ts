@@ -6,7 +6,6 @@ class Person {
     public age: number ){}
 }
 class Animal {
-  
   constructor( public nameAnimal: string,
   public age: number){}
 }
