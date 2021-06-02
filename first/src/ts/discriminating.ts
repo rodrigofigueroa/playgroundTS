@@ -40,7 +40,7 @@ function area( figure: Figure ): number | undefined {
 }
 
 const myTriangle: Triangle = { kind: 'triangle', height: 50, width: 20}
-const myCircle: Circle = { kind: 'circle', width: 20}
+const myCircle: Circle = { kind: 'circle', width: 20 }
 
 console.log(
   area( myTriangle )
