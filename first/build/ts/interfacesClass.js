@@ -50,3 +50,23 @@ console.log(jamesBondCar.startEngine());
 jamesBondCar.run(32);
 console.log(jamesBondCar.swimming());
 console.log(jamesBondCar.flying());
+var FusionCar = /** @class */ (function () {
+    function FusionCar() {
+    }
+    FusionCar.prototype.normal = function () {
+        console.log('This is a normal car');
+    };
+    FusionCar.prototype.startEngine = function () {
+        return true;
+    };
+    FusionCar.prototype.stop = function () {
+        return false;
+    };
+    FusionCar.prototype.run = function (km) {
+        console.log("This is running at " + km + " KM");
+    };
+    return FusionCar;
+}());
+var normalChevy = new FusionCar();
+normalChevy.normal();
+normalChevy.run(20);

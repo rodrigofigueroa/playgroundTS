@@ -46,3 +46,29 @@ console.log(jamesBondCar.startEngine() )
 jamesBondCar.run( 32 )
 console.log( jamesBondCar.swimming() )
 console.log( jamesBondCar.flying() )
+
+
+// extenx interfaces
+
+interface normalCar extends authomovile{
+  normal(): void
+}
+
+class FusionCar implements normalCar{
+  normal(): void{
+    console.log('This is a normal car');
+  }
+  startEngine(){
+    return true
+  }
+  stop(){
+    return false
+  }
+  run( km:number ){
+    console.log(`This is running at ${ km } KM`)
+  }
+}
+
+const normalChevy = new FusionCar()
+normalChevy.normal()
+normalChevy.run(20)
