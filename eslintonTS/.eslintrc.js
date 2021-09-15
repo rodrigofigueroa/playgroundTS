@@ -6,6 +6,6 @@ module.exports = {
   ],
   extends: [
     'eslint:recommended',
-    'pluging:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended'
   ]
 }
