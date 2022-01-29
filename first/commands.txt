@@ -1,7 +1,7 @@
-install tsc
+// install tsc
 
 npm i --g typescript
 
-
+npm --out file.ts ./../fileend.js --sourceMap true --inlineSources true
 
 tsc init
